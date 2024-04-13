@@ -1,0 +1,334 @@
+
+{% load static %}<!--
+=========================================================
+* Argon Dashboard PRO - v1.2.0
+=========================================================
+* Product Page: https://www.creative-tim.com/product/argon-dashboard-pro
+* Copyright  Creative Tim (http://www.creative-tim.com)
+* Coded by www.creative-tim.com
+=========================================================
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<title>SAHACHARI SKSSF KANNUR | ONLINE PORTAL</title>  <!-- Extra details for Live View on GitHub Pages -->
+  <!-- Canonical SEO -->
+  <link rel="canonical" href="https://www.creative-tim.com/product/argon-dashboard-pro" />
+  <!--  Social tags      -->
+  <!-- Favicon -->
+  <link rel="icon" href={% static "assets/img/brand/favicon.png" %} type="image/png"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"/>
+  <!-- Icons -->
+  <link rel="stylesheet" href={% static "assets/vendor/nucleo/css/nucleo.css" %} type="text/css"/>
+  <link rel="stylesheet" href={% static "assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" %} type="text/css"/>
+  <!-- Page plugins -->
+    <!-- Page plugins -->
+  <link rel="stylesheet" href={% static "assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css"%}/>
+  <link rel="stylesheet" href={% static "assets/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css"%}/>
+  <link rel="stylesheet" href={% static "assets/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css"%}/>
+  <link rel="stylesheet" type="text/css" href={% static "assets/vendor/select2/dist/css/select2.min.css" %}/>
+ <link rel="stylesheet" href={% static "assets/vendor/quill/dist/quill.core.css" %}>
+
+  <!-- Argon CSS -->
+    <link rel="stylesheet" href={% static "assets/css/argon.min.css" %} type="text/css"/>
+  <!-- Google Tag Manager -->
+
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  d-flex  align-items-center">
+          <img src={% static "assets/img/brand/blue.png" %} class="navbar-brand-img" alt="...">
+        </a>
+        <div class=" ml-auto ">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        {% include 'distsidebar.html' %}
+
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center  ml-md-auto ">
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+          <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src={% static "/assets/img/theme/team-4.jpg" %}>
+                  </span>
+                  <div class="media-body  ml-2  d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">{{ whom }}</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu  dropdown-menu-right ">
+                <div class="dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                <a href="#!" class="dropdown-item">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>Change Password</span>
+                </a>
+
+                <div class="dropdown-divider"></div>
+<a href="{% url 'logout' %}" class="dropdown-item">
+                 <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">District</li>
+                </ol>
+              </nav>
+            </div>
+
+          </div>
+          <!-- Card stats -->
+
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <!-- Table -->
+            <div class="row">
+        <div class="col-lg-6">
+          <div class="card-wrapper">
+            <!-- Form controls -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header">
+                <h3 class="mb-0">Patient Details</h3>
+              </div>
+              <!-- Card body -->
+              <div class="card-body">
+
+                  <div class="form-group">
+                    <label class="form-control-label" >Application Number</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.mdcnumber }}"  disabled>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-control-label" >Unit</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.unit }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Cluster</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.cluster }}"  disabled>
+                  </div>
+                    <div class="form-group">
+                    <label class="form-control-label" >Zone</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.zone }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient1 Name</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.p1 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient1 Age</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.a1 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient1 Hospital</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.h1 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient2 Name</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.p2 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient2 Age</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.a2 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient2 Hospital</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.h2 }}"  disabled>
+                  </div>
+              </div>
+            </div>
+            <!-- HTML5 inputs -->
+          </div>
+        </div>
+                 <div class="col-lg-6">
+          <div class="card-wrapper">
+            <!-- Sizes -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header">
+                <h3 class="mb-0">Patient Details</h3>
+              </div>
+
+              <!-- Card body -->
+              <div class="card-body">
+                   <div class="form-group">
+                    <label class="form-control-label" >Patient3 Name</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.p3 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient3 Age</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.a3 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient3 Hospital</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.h3 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient4 Name</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.p4 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient4 Age</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.a4 }}"  disabled>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" >Patient4 Hospital</label>
+                    <input type="email" class="form-control"  placeholder="{{ obj.h4 }}"  disabled>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <!-- Sizes -->
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header">
+                <h3 class="mb-0">Approve</h3>
+              </div>
+
+              <!-- Card body -->
+              <div class="card-body">
+                  {{ form.errors }}
+                  <form method="post">
+                      {% csrf_token %}
+<div class="form-group">
+                    <label  class="form-control-label">Last Date</label>
+                      <input class="form-control" name="lastdat" type="date">
+                  </div>
+                  <div class="form-group">
+                    <label  class="form-control-label">Coupon Type</label>
+                     <select  name="medrem" class="form-control custom-select">
+                                                                                 <option  value="4">4x 500</option>
+
+                                                        <option  value="1">1X 2000</option>
+                                                        <option  value="2">2x 1000</option>
+                                                        <option  value="3">1x 1000, 2x500</option>
+                                                <option  value="5">1x 1500, 1x500</option>
+
+
+
+                                                    </select>
+                  </div>
+                                        <div class="form-group">
+
+                                      <label class="form-control-label" >Medical Shop</label>
+
+                      <select required name="medshop" class="form-control select2-hidden-accessible" id="ids" data-toggle="select" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                    <option></option>
+                  {% for un in centre %}
+                    <option >{{ un.name }}</option>
+                    {% endfor %}
+                  </select>
+                                        </div>
+                      <button class="btn btn-primary" type="submit">Approve</button>
+
+                      </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+    </div>
+
+
+  </div>
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <!-- Core -->
+  <script src={% static "assets/vendor/jquery/dist/jquery.min.js" %}></script>
+  <script src={% static "assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" %}></script>
+  <script src={% static "assets/vendor/js-cookie/js.cookie.js" %}></script>
+  <script src={% static "assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" %}></script>
+  <script src={% static "assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js" %}></script>
+  <!-- Argon JS -->
+
+  <!-- Optional JS -->
+    <!-- Optional JS -->
+  <script src={% static "assets/vendor/datatables.net/js/jquery.dataTables.min.js" %}></script>
+  <script src={% static "assets/vendor/datatables.net-bs4/js/dataTables.bootstrap4.min.js" %}></script>
+  <script src={% static "assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js" %}></script>
+  <script src={% static "assets/vendor/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js" %}></script>
+  <script src={% static "assets/vendor/datatables.net-buttons/js/buttons.html5.min.js" %}></script>
+  <script src={% static "assets/vendor/datatables.net-buttons/js/buttons.flash.min.js" %}></script>
+  <script src={% static "assets/vendor/datatables.net-buttons/js/buttons.print.min.js" %}></script>
+  <script src={% static "assets/vendor/datatables.net-select/js/dataTables.select.min.js" %}></script>
+            <script src={% static "assets/vendor/select2/dist/js/select2.min.js" %}></script>
+
+  <!-- Argon JS -->
+<script>$('#ids').select2({
+    placeholder: "Select Unit"
+});</script>
+  <script src={% static "assets/js/argon.min.js" %}></script>
+</body>
+
+</html>
